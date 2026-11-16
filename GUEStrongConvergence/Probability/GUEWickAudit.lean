@@ -1,0 +1,56 @@
+/-
+# Axiom audit for the complex GUE Wick recursion
+
+All declarations in `GUEStrongConvergence.Probability.GUEWick` must depend only on Lean's
+standard logical axioms `propext`, `Classical.choice`, and `Quot.sound`.
+-/
+import GUEStrongConvergence.Probability.GUEWick
+
+#print axioms GUEStrongConvergence.gueSwap
+#print axioms GUEStrongConvergence.gueSwap_swap
+#print axioms GUEStrongConvergence.gueEntry
+#print axioms GUEStrongConvergence.gueAlphaScaled
+#print axioms GUEStrongConvergence.gueBetaScaled
+#print axioms GUEStrongConvergence.gueEntry_eq
+#print axioms GUEStrongConvergence.gueCoeff
+#print axioms GUEStrongConvergence.gueProd
+#print axioms GUEStrongConvergence.gueProdDeriv
+#print axioms GUEStrongConvergence.hasDerivAt_eval_piRecon
+#print axioms GUEStrongConvergence.hasDerivAt_gueEntry
+#print axioms GUEStrongConvergence.hasDerivAt_gueProd
+#print axioms GUEStrongConvergence.gueProdDeriv_eq_sum
+#print axioms GUEStrongConvergence.memLp_gueEntry
+#print axioms GUEStrongConvergence.memLp_finProd_one_complex
+#print axioms GUEStrongConvergence.gueProd_eq_prod_get
+#print axioms GUEStrongConvergence.memLp_gueProd_one
+#print axioms GUEStrongConvergence.integrable_gueProd
+#print axioms GUEStrongConvergence.gueExpand
+#print axioms GUEStrongConvergence.gueExpandEval
+#print axioms GUEStrongConvergence.gueExpandEval_append
+#print axioms GUEStrongConvergence.gueExpandEval_flatMap
+#print axioms GUEStrongConvergence.gueExpandEval_gueExpand_cons
+#print axioms GUEStrongConvergence.gueProd_eq_gueExpand
+#print axioms GUEStrongConvergence.gueCount
+#print axioms GUEStrongConvergence.coordProdOff_cons
+#print axioms GUEStrongConvergence.coordProd_piRecon_gueCount
+#print axioms GUEStrongConvergence.integrable_density_expandTerm
+#print axioms GUEStrongConvergence.integrable_density_t_expandTerm
+#print axioms GUEStrongConvergence.tendsto_density_expandTerm_atBot
+#print axioms GUEStrongConvergence.tendsto_density_expandTerm_atTop
+#print axioms GUEStrongConvergence.integrable_density_gueExpandEval
+#print axioms GUEStrongConvergence.integrable_density_t_gueExpandEval
+#print axioms GUEStrongConvergence.tendsto_density_gueExpandEval_atBot
+#print axioms GUEStrongConvergence.tendsto_density_gueExpandEval_atTop
+#print axioms GUEStrongConvergence.integrable_density_gueProd
+#print axioms GUEStrongConvergence.integrable_density_t_gueProd
+#print axioms GUEStrongConvergence.tendsto_density_gueProd_atBot
+#print axioms GUEStrongConvergence.tendsto_density_gueProd_atTop
+#print axioms GUEStrongConvergence.integrable_coord_mul_gueExpandEval
+#print axioms GUEStrongConvergence.integrable_coord_mul_gueProd
+#print axioms GUEStrongConvergence.gueCov
+#print axioms GUEStrongConvergence.integral_coord_mul_gueEntry
+#print axioms GUEStrongConvergence.integrable_density_gueProdDeriv
+#print axioms GUEStrongConvergence.integral_gueEntry_mul_gueEntry
+#print axioms GUEStrongConvergence.gueCov_eq_coeff
+#print axioms GUEStrongConvergence.integral_gueEntry_mul_gueProd
+#print axioms GUEStrongConvergence.integral_gueEntry_eq_zero
